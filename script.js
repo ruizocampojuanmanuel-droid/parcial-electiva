@@ -54,4 +54,24 @@ if(fumador === "si"){
 
 // ver los puntos en la consola
 console.log("Puntos de riesgo:", puntos);
+
+// ahora  el nivel de riesgo según los puntos
+if(puntos <= 2){
+
+    document.getElementById("textoResultado").textContent = "Riesgo cardiovascular bajo";
+    document.getElementById("resultado").style.backgroundColor = "lightgreen";
+
+}
+else if(puntos <= 5){
+
+    document.getElementById("textoResultado").textContent = "Riesgo cardiovascular moderado";
+    document.getElementById("resultado").style.backgroundColor = "khaki";
+
+}
+else{
+
+    document.getElementById("textoResultado").textContent = "Riesgo cardiovascular alto";
+    document.getElementById("resultado").style.backgroundColor = "lightcoral";
+
+}
 });
