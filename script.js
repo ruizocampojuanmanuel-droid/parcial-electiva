@@ -124,6 +124,7 @@ else{
 
 }
 
+<<<<<<< HEAD
 // Busco el botón limpiar
 const btnLimpiar = document.getElementById("btnLimpiar");
 
@@ -147,4 +148,6 @@ btnLimpiar.addEventListener("click", function(){
 
 });
 
+=======
+>>>>>>> f30ee687d1f2d00e78f00b8b2642e641786abfe4
 });
