@@ -11,7 +11,15 @@ btnCalcular.addEventListener("click", function(){
     let colesterol = document.getElementById("colesterol").value;
     let fumador = document.getElementById("fumador").value;
 
-    
-    console.log(edad, presion, colesterol, fumador);
 
+
+    // Verifico que todos los campos estén llenos
+    if(edad === "" || presion === "" || colesterol === "" || fumador === ""){
+        document.getElementById("textoResultado").textContent =
+        "Por favor llena todos los campos";
+        return;
+    }
+
+     //comprobar que sí capturó los datos
+    console.log(edad, presion, colesterol, fumador);
 });
