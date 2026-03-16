@@ -75,56 +75,53 @@ else{
 
 }
 
-// Busco la lista donde voy a poner las recomendaciones
+// Busco la lista donde se van a mostrar las recomendaciones
 let lista = document.getElementById("recomendaciones");
 
-// limpio recomendaciones anteriores
-lista.innerHTML = "";
-
-//  recomendaciones según el nivel de riesgo
 if(puntos <= 2){
 
-    let r1 = document.createElement("li");
-    r1.textContent = "Mantener una alimentación saludable";
-    lista.append(r1);
+    let recomendacion = document.createElement("li");
+    recomendacion.textContent = "tener una alimentación saludable";
+    lista.append(recomendacion);
 
-    let r2 = document.createElement("li");
-    r2.textContent = "Seguir haciendo actividad física";
-    lista.append(r2);
+    recomendacion = document.createElement("li");
+    recomendacion.textContent = "hacer actividad física regularmente";
+    lista.append(recomendacion);
 
-    let r3 = document.createElement("li");
-    r3.textContent = "Hacer chequeos médicos periódicos";
-    lista.append(r3);
+    recomendacion = document.createElement("li");
+    recomendacion.textContent = "Hacer chequeos médicos periódicos";
+    lista.append(recomendacion);
 
 }
 else if(puntos <= 5){
 
-    let r1 = document.createElement("li");
-    r1.textContent = "Reducir consumo de sal y grasas";
-    lista.append(r1);
+    let recomendacion = document.createElement("li");
+    recomendacion.textContent = "bajar el  consumo de sal y grasas";
+    lista.append(recomendacion);
 
-    let r2 = document.createElement("li");
-    r2.textContent = "Aumentar la actividad física";
-    lista.append(r2);
+    recomendacion = document.createElement("li");
+    recomendacion.textContent = "Aumentar la actividad física";
+    lista.append(recomendacion);
 
-    let r3 = document.createElement("li");
-    r3.textContent = "Consultar al médico para control";
-    lista.append(r3);
+    recomendacion = document.createElement("li");
+    recomendacion.textContent = "Consultar con un médico para control";
+    lista.append(recomendacion);
 
 }
 else{
 
-    let r1 = document.createElement("li");
-    r1.textContent = "Consultar con un médico lo antes posible";
-    lista.append(r1);
+    let recomendacion = document.createElement("li");
+    recomendacion.textContent = "llamar un médico lo antes posible";
+    lista.append(recomendacion);
 
-    let r2 = document.createElement("li");
-    r2.textContent = "Dejar de fumar";
-    lista.append(r2);
+    recomendacion = document.createElement("li");
+    recomendacion.textContent = "Dejar de fumar";
+    lista.append(recomendacion);
 
-    let r3 = document.createElement("li");
-    r3.textContent = "Controlar presión arterial y colesterol";
-    lista.append(r3);
+    recomendacion = document.createElement("li");
+    recomendacion.textContent = "Controlar presión arterial y colesterol";
+    lista.append(recomendacion);
 
 }
+
 });
