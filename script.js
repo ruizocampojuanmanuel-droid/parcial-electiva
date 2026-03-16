@@ -22,4 +22,36 @@ btnCalcular.addEventListener("click", function(){
 
      //comprobar que sí capturó los datos
     console.log(edad, presion, colesterol, fumador);
+
+    // variable donde voy a guardar los puntos de riesgo
+let puntos = 0;
+
+// reglas para la edad
+if(edad >= 35 && edad <= 44){
+    puntos = puntos + 1;
+}else if(edad >= 45){
+    puntos = puntos + 2;
+}
+
+// reglas para la presión
+if(presion >= 140){
+    puntos = puntos + 3;
+}else if(presion >= 120){
+    puntos = puntos + 1;
+}
+
+// reglas para el colesterol
+if(colesterol >= 240){
+    puntos = puntos + 3;
+}else if(colesterol >= 200){
+    puntos = puntos + 1;
+}
+
+// si la persona fuma suma puntos
+if(fumador === "si"){
+    puntos = puntos + 3;
+}
+
+// ver los puntos en la consola
+console.log("Puntos de riesgo:", puntos);
 });
