@@ -27,7 +27,7 @@ btnCalcular.addEventListener("click", function(){
 let puntos = 0;
 
 // reglas para la edad
-if(edad >= 35 && edad <= 44){
+if(edad >= 35 , edad <= 44){
     puntos = puntos + 1;
 }else if(edad >= 45){
     puntos = puntos + 2;
@@ -52,26 +52,25 @@ if(fumador === "si"){
     puntos = puntos + 3;
 }
 
-// ver los puntos en la consola
-console.log("Puntos de riesgo:", puntos);
+
 
 // ahora  el nivel de riesgo según los puntos
 if(puntos <= 2){
 
     document.getElementById("textoResultado").textContent = "Riesgo cardiovascular bajo";
-    document.getElementById("resultado").style.backgroundColor = "lightgreen";
+    document.getElementById("resultado").style.backgroundColor = "green";
 
 }
 else if(puntos <= 5){
 
     document.getElementById("textoResultado").textContent = "Riesgo cardiovascular moderado";
-    document.getElementById("resultado").style.backgroundColor = "khaki";
+    document.getElementById("resultado").style.backgroundColor = "yellow";
 
 }
 else{
 
     document.getElementById("textoResultado").textContent = "Riesgo cardiovascular alto";
-    document.getElementById("resultado").style.backgroundColor = "lightcoral";
+    document.getElementById("resultado").style.backgroundColor = "red";
 
 }
 
@@ -89,7 +88,7 @@ if(puntos <= 2){
     lista.append(recomendacion);
 
     recomendacion = document.createElement("li");
-    recomendacion.textContent = "Hacer chequeos médicos periódicos";
+    recomendacion.textContent = "Hacer revisiones médicas constantemente";
     lista.append(recomendacion);
 
 }
