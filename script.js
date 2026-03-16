@@ -74,4 +74,57 @@ else{
     document.getElementById("resultado").style.backgroundColor = "lightcoral";
 
 }
+
+// Busco la lista donde voy a poner las recomendaciones
+let lista = document.getElementById("recomendaciones");
+
+// limpio recomendaciones anteriores
+lista.innerHTML = "";
+
+//  recomendaciones según el nivel de riesgo
+if(puntos <= 2){
+
+    let r1 = document.createElement("li");
+    r1.textContent = "Mantener una alimentación saludable";
+    lista.append(r1);
+
+    let r2 = document.createElement("li");
+    r2.textContent = "Seguir haciendo actividad física";
+    lista.append(r2);
+
+    let r3 = document.createElement("li");
+    r3.textContent = "Hacer chequeos médicos periódicos";
+    lista.append(r3);
+
+}
+else if(puntos <= 5){
+
+    let r1 = document.createElement("li");
+    r1.textContent = "Reducir consumo de sal y grasas";
+    lista.append(r1);
+
+    let r2 = document.createElement("li");
+    r2.textContent = "Aumentar la actividad física";
+    lista.append(r2);
+
+    let r3 = document.createElement("li");
+    r3.textContent = "Consultar al médico para control";
+    lista.append(r3);
+
+}
+else{
+
+    let r1 = document.createElement("li");
+    r1.textContent = "Consultar con un médico lo antes posible";
+    lista.append(r1);
+
+    let r2 = document.createElement("li");
+    r2.textContent = "Dejar de fumar";
+    lista.append(r2);
+
+    let r3 = document.createElement("li");
+    r3.textContent = "Controlar presión arterial y colesterol";
+    lista.append(r3);
+
+}
 });
