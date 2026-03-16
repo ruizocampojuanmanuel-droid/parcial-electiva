@@ -1,0 +1,97 @@
+/* estilo neumorfismo
+Juan Manuel Ruiz*/
+
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e0e5ec;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+
+.contenedor{
+    background:#e0e5ec;
+    padding:30px;
+    border-radius:20px;
+    width:400px;
+    text-align:center;
+
+
+    box-shadow: 8px 8px 15px #a3b1c6,
+                -8px -8px 15px #ffffff;
+}
+
+h1{
+    margin-bottom:10px;
+}
+
+.subtitulo{
+    color:#555;
+    margin-bottom:20px;
+}
+
+
+.campo{
+    text-align:left;
+    margin-bottom:15px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    background:#e0e5ec;
+
+    box-shadow: inset 5px 5px 10px #a3b1c6,
+                inset -5px -5px 10px #ffffff;
+}
+
+
+button{
+    margin-top:10px;
+    padding:10px 20px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    background:#e0e5ec;
+    font-weight:bold;
+
+    box-shadow: 5px 5px 10px #a3b1c6,
+                -5px -5px 10px #ffffff;
+}
+
+button:active{
+    box-shadow: inset 5px 5px 10px #a3b1c6,
+                inset -5px -5px 10px #ffffff;
+}
+
+
+.resultado{
+    margin-top:20px;
+    padding:15px;
+    border-radius:15px;
+    background:#e0e5ec;
+
+    box-shadow: inset 5px 5px 10px #a3b1c6,
+                inset -5px -5px 10px #ffffff;
+}
+
+.nivel{
+    margin-top:10px;
+    padding:10px;
+    border-radius:10px;
+    font-weight:bold;
+}
