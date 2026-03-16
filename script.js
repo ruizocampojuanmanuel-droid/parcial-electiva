@@ -123,8 +123,6 @@ else{
     lista.append(recomendacion);
 
 }
-
-<<<<<<< HEAD
 // Busco el botón limpiar
 const btnLimpiar = document.getElementById("btnLimpiar");
 
@@ -147,7 +145,4 @@ btnLimpiar.addEventListener("click", function(){
     document.getElementById("resultado").style.backgroundColor = "";
 
 });
-
-=======
->>>>>>> f30ee687d1f2d00e78f00b8b2642e641786abfe4
 });
