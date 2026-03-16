@@ -54,4 +54,97 @@ if(fumador === "si"){
 
 // ver los puntos en la consola
 console.log("Puntos de riesgo:", puntos);
+
+// ahora  el nivel de riesgo según los puntos
+if(puntos <= 2){
+
+    document.getElementById("textoResultado").textContent = "Riesgo cardiovascular bajo";
+    document.getElementById("resultado").style.backgroundColor = "lightgreen";
+
+}
+else if(puntos <= 5){
+
+    document.getElementById("textoResultado").textContent = "Riesgo cardiovascular moderado";
+    document.getElementById("resultado").style.backgroundColor = "khaki";
+
+}
+else{
+
+    document.getElementById("textoResultado").textContent = "Riesgo cardiovascular alto";
+    document.getElementById("resultado").style.backgroundColor = "lightcoral";
+
+}
+
+// Busco la lista donde se van a mostrar las recomendaciones
+let lista = document.getElementById("recomendaciones");
+
+if(puntos <= 2){
+
+    let recomendacion = document.createElement("li");
+    recomendacion.textContent = "tener una alimentación saludable";
+    lista.append(recomendacion);
+
+    recomendacion = document.createElement("li");
+    recomendacion.textContent = "hacer actividad física regularmente";
+    lista.append(recomendacion);
+
+    recomendacion = document.createElement("li");
+    recomendacion.textContent = "Hacer chequeos médicos periódicos";
+    lista.append(recomendacion);
+
+}
+else if(puntos <= 5){
+
+    let recomendacion = document.createElement("li");
+    recomendacion.textContent = "bajar el  consumo de sal y grasas";
+    lista.append(recomendacion);
+
+    recomendacion = document.createElement("li");
+    recomendacion.textContent = "Aumentar la actividad física";
+    lista.append(recomendacion);
+
+    recomendacion = document.createElement("li");
+    recomendacion.textContent = "Consultar con un médico para control";
+    lista.append(recomendacion);
+
+}
+else{
+
+    let recomendacion = document.createElement("li");
+    recomendacion.textContent = "llamar un médico lo antes posible";
+    lista.append(recomendacion);
+
+    recomendacion = document.createElement("li");
+    recomendacion.textContent = "Dejar de fumar";
+    lista.append(recomendacion);
+
+    recomendacion = document.createElement("li");
+    recomendacion.textContent = "Controlar presión arterial y colesterol";
+    lista.append(recomendacion);
+
+}
+
+// Busco el botón limpiar
+const btnLimpiar = document.getElementById("btnLimpiar");
+
+// cuando se presione el botón limpiar
+btnLimpiar.addEventListener("click", function(){
+
+    // limpio los campos del formulario
+    document.getElementById("edad").value = "";
+    document.getElementById("presion").value = "";
+    document.getElementById("colesterol").value = "";
+    document.getElementById("fumador").value = "";
+
+    // borro el resultado
+    document.getElementById("textoResultado").textContent = "";
+
+    // limpio las recomendaciones
+    document.getElementById("recomendaciones").innerHTML = "";
+
+    // quito el color del resultado
+    document.getElementById("resultado").style.backgroundColor = "";
+
+});
+
 });
